@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>    
+body{background-color:#00FFFF;
+}    
+#div1{color:blue;}    
+
+#button1{background-color:transparent;
+border:1px solid blue;
+color:blue;
+}
+
+#button1:focus{ background-color:blue;
+color:#00FFFF;
+border:1px solid #00ced1;
+}
+
+#button2{background-color:transparent;
+border:1px solid blue;
+color:blue;
+}
+
+#button2:focus{ background-color:blue;
+color:#00FFFF;
+border:1px solid #00ced1;
+}
+#button3{background-color:transparent;
+border:1px solid blue;
+color:blue;
+}
+
+#button3:focus{ background-color:blue;
+color:#00FFFF;
+border:1px solid #00ced1;
+}
+
+
+
+
+
+
+
+
+</style>    
+    
+	</head>
+	<body>
+	<div id=div1>
+<h1>Survey Helper</h1>	    
+	<button id=button1 onclick="startjs()">Start</button>
+	<br>
+	<br>
+	<button id=button2 onclick="changevar()">Change Variables</button>
+	<br>
+	<br>
+	<button id=button3 onclick="result1()">Result</button>
+	<p>This was made in htm5 css and js ans is a hybrid app</p>
+	 </div>    
+	<script>
+
+function changevar(){
+	v1=prompt("Insert your first option");
+	v2=prompt("Insert your second option");
+	v3=prompt("Insert your last option");
+}
+function startjs(){
+opa="hi";
+opb="hi";
+opc="hi";
+opra = ("People like"+" "+v1);
+oprb = ("People like"+" "+v2);
+oprc = ("People like"+" "+v3);
+opa =prompt("How many people like"+" "+v1);
+opb =prompt("How many people like"+" "+v2);
+opc =prompt("How many people like"+" "+v3);
+
+result=opa+" "+opra+" "+opb+" "+oprb+" "+opc+" "+oprc;
+}
+function result1(){ 
+alert(result);
+
+if(opa>opb&&opa>opc){
+alert("The most people like"+" "+v1);
+}
+if(opb>opc&&opb>opa){
+alert ("The most people like"+" "+v2);
+}
+if(opc>opa&&opc>opb){
+alert ("The most people like"+" "+v3);
+}
+if(opa==opb&&opa>opc){
+alert ("The most people like either"+" "+v1+" "+"or"+" "+v2);
+}
+if(opa==opc&&opa>opb){
+alert ("The most people like either"+" "+v1+" "+"or"+" "+v3);
+}
+if(opb==opc&&opb>opa) {
+alert ("The most people like either"+" "+v2+" "+"or"+" "+v3);
+} 
+if(opa<opb&&opa<opc){ 
+alert("The least people like"+" "+v1);
+}
+if (opb<opa&&opb<opc){
+alert("The least people like"+" "+v2);
+}
+if (opc<opa&&opc<opb){
+alert("The least people like"+" "+v3);
+}
+if(opa==opb&&opa<opc){
+alert ("The least people like"+" "+v1+" "+"and"+" "+v2);
+}
+if(opa==opc&&opa<opb){
+alert ("The least people like"+" "+v1+" "+"and"+" "+v3);
+}
+if(opb==opc&&opb<opa) {
+alert ("The least people like"+" "+v2+" "+"and"+" "+v3);
+} 
+
+
+
+}
+	
+	</script>
+
+	</body>
+	
+ </html>
